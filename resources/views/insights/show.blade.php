@@ -12,7 +12,7 @@
 @if($post->featured_image_path)<img src="{{ asset("storage/" . $post->featured_image_path) }}" alt="{{ $post->title }}" class="w-full rounded-2xl border border-slate-200 dark:border-white/10 mt-8 object-cover max-h-[420px]">@endif
 <div class="mt-10 pt-10 border-t border-slate-200/80 dark:border-white/[0.08] space-y-6 text-slate-700 dark:text-slate-300 leading-relaxed text-base">{!! $post->body !!}</div>
 @if(!empty($post->tags))<div class="flex flex-wrap gap-2 mt-10 pt-6 border-t border-slate-200/80 dark:border-white/[0.08]">
-@foreach($post->tags as$tag)<span class="text-xs font-mono px-3 py-1 rounded-full bg-slate-100 dark:bg-white/5 text-slate-600 dark:text-slate-300">#{{ $tag }}</span>@endforeach
+@foreach($post->tags as $tag)<span class="text-xs font-mono px-3 py-1 rounded-full bg-slate-100 dark:bg-white/5 text-slate-600 dark:text-slate-300">#{{ $tag }}</span>@endforeach
 </div>@endif
 <div class="mt-10 p-6 rounded-2xl border border-slate-200/80 dark:border-white/[0.08] bg-white/70 dark:bg-white/[0.02] flex flex-wrap items-center justify-between gap-4">
 <span class="text-sm font-display font-bold">Share this insight</span>

@@ -32,7 +32,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('slug')->unique();
             $table->string('role');
-            $table->enum('category', ['business', 'agency', 'foundation', 'executive'])->index();
+            $table->enum('category', ['business', 'agency', 'foundation', 'executive', 'philanthropy'])->index();
             $table->string('tagline')->nullable();
             $table->text('summary');
             $table->longText('description')->nullable();
